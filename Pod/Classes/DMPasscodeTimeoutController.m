@@ -67,8 +67,9 @@ preparation before navigation
   [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-  [super textFieldDidEndEditing:textField];
+- (void)editingChanged:(UITextField *)sender {
+  [super editingChanged:sender];
+  [self resetTimer];
 }
 
 @end

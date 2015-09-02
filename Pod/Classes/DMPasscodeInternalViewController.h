@@ -27,4 +27,5 @@
 - (void)setErrorMessage:(NSString *)errorMessage;
 - (void)setInstructions:(NSString *)instructions;
 
+- (void)editingChanged:(UITextField *)sender;
 @end
