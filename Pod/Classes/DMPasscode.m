@@ -18,8 +18,9 @@
 
 #undef NSLocalizedString
 #define NSLocalizedString(key, comment)                                        \
-  [bundle localizedStringForKey:(key)value:@"" table:@"DMPasscodeLocalisatio" \
-                                                      @"n"]
+  [bundle localizedStringForKey:(key)                                          \
+                          value:@""                                            \
+                          table:@"DMPasscodeLocalisatio" @"n"]
 
 static DMPasscode *instance;
 static const NSString *KEYCHAIN_NAME = @"passcode";
@@ -151,10 +152,10 @@ NSString *const DMUnlockErrorDomain = @"com.dmpasscode.error.unlock";
   _mode = mode;
   _count = 0;
   _passcodeViewController =
-      [[DMPasscodeInternalViewController alloc] initWithDelegate:self
-                                                          config:_config];
+      [[DMPasscodeTimeoutController alloc] initWithDelegate:self
+                                                     config:_config];
   DMPasscodeInternalNavigationController *nc =
-      [[DMPasscodeTimeoutController alloc]
+      [[DMPasscodeInternalNavigationController alloc]
           initWithRootViewController:_passcodeViewController];
   [nc setModalPresentationStyle:UIModalPresentationFormSheet];
   [viewController presentViewController:nc animated:YES completion:nil];
