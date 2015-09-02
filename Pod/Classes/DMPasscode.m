@@ -151,21 +151,24 @@ NSString *const DMUnlockErrorDomain = @"com.dmpasscode.error.unlock";
               viewController:(UIViewController *)viewController {
   _mode = mode;
   _count = 0;
-  _passcodeViewController =
-      [[DMPasscodeTimeoutController alloc] initWithDelegate:self
-                                                     config:_config];
+  if (_mode == 0) {
+    _passcodeViewController =
+        [[DMPasscodeInternalViewController alloc] initWithDelegate:self
+                                                            config:_config];
+    [_passcodeViewController
+        setInstructions:NSLocalizedString(@"dmpasscode_enter_new_code", nil)];
+  } else {
+    _passcodeViewController =
+        [[DMPasscodeTimeoutController alloc] initWithDelegate:self
+                                                       config:_config];
+    [_passcodeViewController
+        setInstructions:NSLocalizedString(@"dmpasscode_enter_to_unlock", nil)];
+  }
   DMPasscodeInternalNavigationController *nc =
       [[DMPasscodeInternalNavigationController alloc]
           initWithRootViewController:_passcodeViewController];
   [nc setModalPresentationStyle:UIModalPresentationFormSheet];
   [viewController presentViewController:nc animated:YES completion:nil];
-  if (_mode == 0) {
-    [_passcodeViewController
-        setInstructions:NSLocalizedString(@"dmpasscode_enter_new_code", nil)];
-  } else if (_mode == 1) {
-    [_passcodeViewController
-        setInstructions:NSLocalizedString(@"dmpasscode_enter_to_unlock", nil)];
-  }
 }
 
 - (void)closeAndNotify:(BOOL)success withError:(NSError *)error {
