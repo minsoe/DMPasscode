@@ -137,14 +137,10 @@
 		D494F77D82FAA5D1C38F05DE /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D27941F1A84D26415DAE13 /* SpectaUtility.h */; };
 		D52170C6EE26E52797F171B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14075334F0759C9AA35E67A1 /* Foundation.framework */; };
 		D5951CA4C87A0DF7473A750B /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = D65051420EF395BACC0D0477 /* SPTExampleGroup.h */; };
-		D84571FB1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D84571F91B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h */; };
-		D84571FC1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D84571F91B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h */; };
-		D84571FD1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D84571F91B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h */; };
-		D84571FE1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D84571F91B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h */; };
-		D84571FF1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D84571F91B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h */; };
-		D84572001B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D84571F91B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h */; };
-		D84572021B96F54300AD361A /* DMPasscodeTimeoutNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84571FA1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.m */; };
-		D84572091B96F55300AD361A /* DMPasscodeTimeoutNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84571FA1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.m */; };
+		D845720C1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D845720A1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.h */; };
+		D845720D1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D845720A1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.h */; };
+		D84572141B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D845720B1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.m */; };
+		D845721B1B96F7DD00AD361A /* DMPasscodeTimeoutNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D845720B1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.m */; };
 		DAB55BECAD2BA547952EA12F /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = B47F6CEDC712BBC221C0BB56 /* EXPMatchers+beFalsy.h */; };
 		DADA60A3CF7D00A228D5C3BE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367AF3A5DB177B34C9D45020 /* LocalAuthentication.framework */; };
 		DBFF146442469EA354770F33 /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F63FCCD95B7CC497462B1B8 /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -401,8 +397,8 @@
 		D631E61B277C5A2B6FE12F1D /* libPods-Tests-Expecta+Snapshots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-Expecta+Snapshots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63C1D1A028A9C41A5DCF61F /* libPods-Tests-FBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-FBSnapshotTestCase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65051420EF395BACC0D0477 /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = src/SPTExampleGroup.h; sourceTree = "<group>"; };
-		D84571F91B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPasscodeTimeoutNavigationController.h; sourceTree = "<group>"; };
-		D84571FA1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPasscodeTimeoutNavigationController.m; sourceTree = "<group>"; };
+		D845720A1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMPasscodeTimeoutNavigationController.h; path = Pod/Classes/DMPasscodeTimeoutNavigationController.h; sourceTree = "<group>"; };
+		D845720B1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMPasscodeTimeoutNavigationController.m; path = Pod/Classes/DMPasscodeTimeoutNavigationController.m; sourceTree = "<group>"; };
 		DA51E4C448DD17580EC2C878 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		DB24907C3574C76BCF50E573 /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
 		DF875F0EA7F8CE22005AED5D /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
@@ -825,6 +821,8 @@
 		F6293E626982E14D5D5FDBEC /* DMPasscode */ = {
 			isa = PBXGroup;
 			children = (
+				D845720A1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.h */,
+				D845720B1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.m */,
 				9CE52A4230579B2BAB9E435D /* DMKeychain.h */,
 				A91E16EA3842F17D867C8B30 /* DMKeychain.m */,
 				3A67507CB4932C162F587729 /* DMPasscode.h */,
@@ -837,8 +835,6 @@
 				ADF240626FBEE4DBFE3F9447 /* DMPasscodeInternalNavigationController.m */,
 				DFBCFC3F7A1D7810722FC355 /* DMPasscodeInternalViewController.h */,
 				F049B345045E899BD41D4723 /* DMPasscodeInternalViewController.m */,
-				D84571F91B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h */,
-				D84571FA1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.m */,
 				2979C384ADB62A860B2A1A6C /* Resources */,
 				8F6D96A1DE1020BD47FD4426 /* Support Files */,
 			);
@@ -868,7 +864,7 @@
 				0D37C8887E9D495FE84C9AA4 /* DMKeychain.h in Headers */,
 				A10F050F09B63567953A12CD /* DMPasscode.h in Headers */,
 				6AA0D93DA7E3A7F3996B9348 /* DMPasscodeConfig.h in Headers */,
-				D84571FB1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */,
+				D845720C1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */,
 				07848CB070E8CBABC978C395 /* DMPasscodeInternalField.h in Headers */,
 				A5361553C17E7D0036FFD7A2 /* DMPasscodeInternalNavigationController.h in Headers */,
 				6E7956942940BD4AD2C30ECF /* DMPasscodeInternalViewController.h in Headers */,
@@ -882,7 +878,7 @@
 				6F4D7A966544CD8EFE146BBD /* DMKeychain.h in Headers */,
 				351888C6A4085CBD4910B4AB /* DMPasscode.h in Headers */,
 				6057EC70FC89F8B7ACC5604D /* DMPasscodeConfig.h in Headers */,
-				D84571FC1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */,
+				D845720D1B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */,
 				6EF45E9360087A693652A75E /* DMPasscodeInternalField.h in Headers */,
 				4B033017477EBD18AD2CD101 /* DMPasscodeInternalNavigationController.h in Headers */,
 				201201485960F2D71A672F2D /* DMPasscodeInternalViewController.h in Headers */,
@@ -904,7 +900,6 @@
 				620F0D69038497C2CB30001B /* Specta.h in Headers */,
 				A80DFBFE11790E58A268CBA0 /* SpectaSupport.h in Headers */,
 				E7554DEEBD4E1BF993D94E01 /* SpectaTypes.h in Headers */,
-				D84572001B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */,
 				D494F77D82FAA5D1C38F05DE /* SpectaUtility.h in Headers */,
 				303C91A3E62CC460AD2E294D /* XCTestCase+Specta.h in Headers */,
 				E20A50A947D04F1550EBEDDD /* XCTestLog+Specta.h in Headers */,
@@ -917,7 +912,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1CCCA3150E8D07379D74324 /* EXPMatchers+FBSnapshotTest.h in Headers */,
-				D84571FE1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -935,7 +929,6 @@
 				9CB797CC5E690EBF8C852458 /* EXPMatchers+beCloseTo.h in Headers */,
 				DAB55BECAD2BA547952EA12F /* EXPMatchers+beFalsy.h in Headers */,
 				2EE17896519711C5F0ACBBF0 /* EXPMatchers+beGreaterThan.h in Headers */,
-				D84571FD1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */,
 				1ED31D0D893EEC9C48B7D5B6 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
 				06E4B58E569386633E4EC1A6 /* EXPMatchers+beIdenticalTo.h in Headers */,
 				0E7BC391BE43E7D93DDF78C2 /* EXPMatchers+beInTheRangeOf.h in Headers */,
@@ -974,7 +967,6 @@
 				E95CA07559EA95A667880DBA /* FBSnapshotTestCase.h in Headers */,
 				CDDFC552977DCE166E04B3EF /* FBSnapshotTestController.h in Headers */,
 				E26B77AB1B426E7DD65F93E3 /* UIImage+Compare.h in Headers */,
-				D84571FF1B96F54300AD361A /* DMPasscodeTimeoutNavigationController.h in Headers */,
 				2F1FD1FB9294043A6F8E6EC7 /* UIImage+Diff.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1291,7 +1283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84572091B96F55300AD361A /* DMPasscodeTimeoutNavigationController.m in Sources */,
+				D845721B1B96F7DD00AD361A /* DMPasscodeTimeoutNavigationController.m in Sources */,
 				57E8A647961E7E9F65333A3B /* DMKeychain.m in Sources */,
 				CB8B12754EE1A99975F2698A /* DMPasscode.m in Sources */,
 				2985602F1F7911BA07782AA9 /* DMPasscodeConfig.m in Sources */,
@@ -1306,7 +1298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84572021B96F54300AD361A /* DMPasscodeTimeoutNavigationController.m in Sources */,
+				D84572141B96F7CF00AD361A /* DMPasscodeTimeoutNavigationController.m in Sources */,
 				9C28C6C1DB0484A1AC0AE014 /* DMKeychain.m in Sources */,
 				A415180A9ED2568D0954E8E8 /* DMPasscode.m in Sources */,
 				D17E6B0DACFF88D97EB4DE40 /* DMPasscodeConfig.m in Sources */,

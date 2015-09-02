@@ -8,6 +8,7 @@
 
 #import "DMPasscodeInternalNavigationController.h"
 
-@interface DMPasscodeTimeoutNavigationController : DMPasscodeInternalNavigationController
+@interface DMPasscodeTimeoutNavigationController
+    : DMPasscodeInternalNavigationController
 
 @end
