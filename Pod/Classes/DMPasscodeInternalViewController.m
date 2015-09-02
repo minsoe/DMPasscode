@@ -10,7 +10,7 @@
 #import "DMPasscodeInternalField.h"
 #import "DMPasscodeConfig.h"
 
-@interface DMPasscodeInternalViewController () <UITextFieldDelegate>
+@interface DMPasscodeInternalViewController ()
 @end
 
 @implementation DMPasscodeInternalViewController {

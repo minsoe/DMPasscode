@@ -10,7 +10,7 @@
 #import "DMPasscodeInternalNavigationController.h"
 #import "DMPasscodeInternalViewController.h"
 #import "DMKeychain.h"
-#import "DMPasscodeTimeoutNavigationController.h"
+#import "DMPasscodeTimeoutController.h"
 
 #ifdef __IPHONE_8_0
 #import <LocalAuthentication/LocalAuthentication.h>
@@ -154,7 +154,7 @@ NSString *const DMUnlockErrorDomain = @"com.dmpasscode.error.unlock";
       [[DMPasscodeInternalViewController alloc] initWithDelegate:self
                                                           config:_config];
   DMPasscodeInternalNavigationController *nc =
-      [[DMPasscodeTimeoutNavigationController alloc]
+      [[DMPasscodeTimeoutController alloc]
           initWithRootViewController:_passcodeViewController];
   [nc setModalPresentationStyle:UIModalPresentationFormSheet];
   [viewController presentViewController:nc animated:YES completion:nil];

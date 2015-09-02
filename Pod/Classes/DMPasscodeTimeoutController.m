@@ -6,15 +6,15 @@
 //
 //
 
-#import "DMPasscodeTimeoutNavigationController.h"
+#import "DMPasscodeTimeoutController.h"
 
-@interface DMPasscodeTimeoutNavigationController ()
+@interface DMPasscodeTimeoutController () <UITextFieldDelegate>
 
 @property(nonatomic, strong) NSTimer *timer;
 
 @end
 
-@implementation DMPasscodeTimeoutNavigationController
+@implementation DMPasscodeTimeoutController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
@@ -65,6 +65,10 @@ preparation before navigation
 
 - (void)dismiss {
   [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+  [super textFieldDidEndEditing:textField];
 }
 
 @end
