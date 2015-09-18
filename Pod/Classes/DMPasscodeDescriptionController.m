@@ -10,7 +10,7 @@
 
 @interface DMPasscodeDescriptionController ()
 
-@property(nonatomic, strong) UILabel *descriptionLabel;
+@property(nonatomic, strong) UITextView *descriptionLabel;
 
 @property(nonatomic, strong) NSAttributedString *descriptionText;
 @property(nonatomic, strong) DMPasscodeConfig *descriptionConfig;
@@ -42,7 +42,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
-  self.descriptionLabel = [[UILabel alloc]
+  self.descriptionLabel = [[UITextView alloc]
       initWithFrame:CGRectMake(50, 250, self.view.frame.size.width - 100,
                                self.view.frame.size.height - 250)];
 
@@ -52,6 +52,7 @@
   self.descriptionLabel.textAlignment = NSTextAlignmentCenter;
   self.descriptionLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
   self.descriptionLabel.attributedText = self.descriptionText;
+  self.descriptionLabel.userInteractionEnabled = false;
   //  self.descriptionLabel.numberOfLines = 0;
   [self.view addSubview:self.descriptionLabel];
   //  [self.descriptionLabel sizeToFit];
