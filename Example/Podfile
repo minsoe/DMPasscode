@@ -3,8 +3,9 @@ target 'DMPasscode', :exclusive => true do
 end
 
 target 'Tests', :exclusive => true do
+    use_frameworks!
   pod "DMPasscode", :path => "../"
-
+  
   pod 'Specta', '~> 0.2.1'
   pod 'Expecta'
   pod 'FBSnapshotTestCase'

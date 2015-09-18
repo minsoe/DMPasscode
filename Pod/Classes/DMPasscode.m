@@ -11,6 +11,7 @@
 #import "DMPasscodeInternalViewController.h"
 #import "DMKeychain.h"
 #import "DMPasscodeTimeoutController.h"
+#import "DMPasscodeDescriptionController.h"
 
 #ifdef __IPHONE_8_0
 #import <LocalAuthentication/LocalAuthentication.h>
@@ -68,6 +69,14 @@ NSString *const DMUnlockErrorDomain = @"com.dmpasscode.error.unlock";
   [instance setupPasscodeInViewController:viewController completion:completion];
 }
 
++ (void)setupPasscodeInViewController:(UIViewController *)viewController
+                          description:(NSAttributedString *)descriptionText
+                           completion:(PasscodeCompletionBlock)completion {
+  [instance setupPasscodeInViewController:viewController
+                              description:descriptionText
+                               completion:completion];
+}
+
 + (void)showPasscodeInViewController:(UIViewController *)viewController
                           completion:(PasscodeCompletionBlock)completion {
   [instance showPasscodeInViewController:viewController completion:completion];
@@ -90,6 +99,15 @@ NSString *const DMUnlockErrorDomain = @"com.dmpasscode.error.unlock";
                            completion:(PasscodeCompletionBlock)completion {
   _completion = completion;
   [self openPasscodeWithMode:0 viewController:viewController];
+}
+
+- (void)setupPasscodeInViewController:(UIViewController *)viewController
+                          description:(NSAttributedString *)description
+                           completion:(PasscodeCompletionBlock)completion {
+  _completion = completion;
+  [self openPasscodeWithMode:0
+              viewController:viewController
+                 description:description];
 }
 
 - (void)showPasscodeInViewController:(UIViewController *)viewController
@@ -148,13 +166,15 @@ NSString *const DMUnlockErrorDomain = @"com.dmpasscode.error.unlock";
 
 #pragma mark - Private
 - (void)openPasscodeWithMode:(int)mode
-              viewController:(UIViewController *)viewController {
+              viewController:(UIViewController *)viewController
+                 description:(NSAttributedString *)description {
   _mode = mode;
   _count = 0;
   if (_mode == 0) {
     _passcodeViewController =
-        [[DMPasscodeInternalViewController alloc] initWithDelegate:self
-                                                            config:_config];
+        [[DMPasscodeDescriptionController alloc] initWithDelegate:self
+                                                           config:_config
+                                                      description:description];
     [_passcodeViewController
         setInstructions:NSLocalizedString(@"dmpasscode_enter_new_code", nil)];
   } else {
@@ -169,6 +189,13 @@ NSString *const DMUnlockErrorDomain = @"com.dmpasscode.error.unlock";
           initWithRootViewController:_passcodeViewController];
   [nc setModalPresentationStyle:UIModalPresentationFormSheet];
   [viewController presentViewController:nc animated:YES completion:nil];
+}
+
+- (void)openPasscodeWithMode:(int)mode
+              viewController:(UIViewController *)viewController {
+  [self openPasscodeWithMode:mode
+              viewController:viewController
+                 description:[[NSAttributedString alloc] initWithString:@""]];
 }
 
 - (void)closeAndNotify:(BOOL)success withError:(NSError *)error {

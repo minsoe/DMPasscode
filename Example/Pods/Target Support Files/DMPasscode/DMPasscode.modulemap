@@ -1,0 +1,6 @@
+framework module DMPasscode {
+  umbrella header "DMPasscode-umbrella.h"
+
+  export *
+  module * { export * }
+}
