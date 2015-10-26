@@ -84,7 +84,6 @@
 		67459AD239EF669A365519E06B45DCFE /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB205BDE430AF33B5FFA59CA4100E4C /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69CBFF5B7699798C1340A06FBA5988D5 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C0A389BF351D794C5264AA302450E0 /* FBSnapshotTestCasePlatform.m */; };
 		6CB8B1ACA94397BA27D7E9D58A44603F /* DMPasscode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F738F34054F6A0468EF4950D5AF2FB56 /* DMPasscode.bundle */; };
-		6DC1DB0FF82205F32A660FCA6CB438D6 /* vn.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 069BB6E556CDB342B9050EDDCB4A1283 /* vn.lproj */; };
 		6E1D978790705E137FDE439AA68DD3AA /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC9D1AC20A4848C2FF02156543C4B49 /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EFC63A5CED45BB39FC79D87F2C47D6B /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CF4FEA3CF119E60ECC97E146D5F570 /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F278423C8AE1DA47F35E374BB5B91EC /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F3FE6E9F422C532E3B5CE6F6415BAD /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -138,6 +137,7 @@
 		BC55C8365AEFF8217F6A567607754854 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D4297DAF4BB0EE99E6076987C234A /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BEFFE9FFE52E9A0833A7D2D8FB67EB4D /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = D650AC0F4B981C7398FA09D6A8A9E50D /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C2382C0F003655AEEFAD24F3C287DA60 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34D0B5B6F65C9B1B6C11A9BF530498 /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C96887131FF42EAF120CD0C71D0E635C /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 502E39F72507395DD5E3EF3BCE07D072 /* en.lproj */; };
 		CDAE15CBF25439A68393B49F7E2A843C /* DMPasscodeConfigAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E71254971A499A67515A1EF6A2AEBD5 /* DMPasscodeConfigAddition.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CE3F4ECBB0BC095577D66AE50C8E604C /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BF89E8AE937B8696302B24CE7DFB61 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D1CBD506D0C526A0EBE61D28B371640A /* DMPasscodeInternalNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B640D6804C3C473FEEAEA3D19F0A40F0 /* DMPasscodeInternalNavigationController.m */; };
@@ -148,6 +148,7 @@
 		D7F64744555CA8BE0EBC6BC7B03C4DF4 /* ExpectaObject+FBSnapshotTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1D2661A52A30E7E4B48601130E762A /* ExpectaObject+FBSnapshotTest.m */; };
 		D83677C54D2226C67886A525B0B46FBE /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB6CE8123A17F4E3F31A4A04E3B4AC6 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D920C43C394FB3E825F1E7BCF3C6099E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA73321FDDF5899DAFEF3B4D64258A /* Security.framework */; };
+		D937B89273437116377B574F6B352FC2 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 433E37505DBE071E7EBF56BAF91BAAD1 /* vi.lproj */; };
 		D942DC0D6F6CF99347047102CEE02187 /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F5D1AAC25C76EF67C969296C448D7F3 /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9826D759990C411D44776DFAF0705E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB20548BF52ADED605D2B209108040C /* Foundation.framework */; };
 		DA1E285C77364408180A45631E762BD0 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF6885898D63F3264747418B43B217E /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -164,7 +165,6 @@
 		F0DDF02A078B917997FF025BB33BB842 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = D7962AD31992209431588931031AD0E8 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F12D57414A73406831CC032A7170DBFF /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECF7538F50FF544C4431A80918C2D6B /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F41209A94070904A00BDF24ACB6336B6 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCF567E566D1A5A90615948E3CBCE2E /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F49D3796EC0FFDBD8D0EFD33C9B42F36 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8280224299E48E08DEF753ACEC011A31 /* en.lproj */; };
 		F556C34C43E01B419D07AA1EAA25276A /* DMPasscodeTimeoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D30D83B58566D2D83C38C2F17C80C47 /* DMPasscodeTimeoutController.m */; };
 		F6DFED3E338AB35BAB9771DBB94A457D /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E02A9FD9355E7C3AC9C4713C99E5CE8F /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F6FDC782B0E73551F14C148486B9FD6B /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 59841904F0244F5B245583A2C8B41705 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -250,7 +250,6 @@
 		01FCEF2B9232297C080904D9199D4BE6 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		029218B459243902A36EE0B8663356AA /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
 		0473642B238286AD973D392591943BD8 /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
-		069BB6E556CDB342B9050EDDCB4A1283 /* vn.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = vn.lproj; sourceTree = "<group>"; };
 		0AB02C02A46DF73A856BC5FD65A64C1A /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
 		0D30D83B58566D2D83C38C2F17C80C47 /* DMPasscodeTimeoutController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DMPasscodeTimeoutController.m; sourceTree = "<group>"; };
 		0DB20548BF52ADED605D2B209108040C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -291,6 +290,7 @@
 		3EDBDC7EA35CEC79574446633758F886 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
 		408AFE4F8590D6920C69C7725DA8807A /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
 		41E132033C94BD476C006573FB8DD769 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		433E37505DBE071E7EBF56BAF91BAAD1 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = vi.lproj; sourceTree = "<group>"; };
 		441E97327F745B81D45D79237D783B32 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
 		452C8EA3FD75DBCA5D533BBF9830A26F /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
 		45DA97B1860F8181D05A2BC491DE0105 /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
@@ -309,6 +309,7 @@
 		4F9C00550E9DCBBC1D6B9BF2691913AF /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
 		4FA65C7A51F5E0A3E0FB999C5DB48F22 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		4FF79988106EA4F3D243DAA72D7CD0D3 /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
+		502E39F72507395DD5E3EF3BCE07D072 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 		510D85B38A4A1B48007D01A0C25E8E2D /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
 		56730125A05DB17FF2FF9658CBE319C4 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
 		56B8D11CB46DCBC3C4EB59DF99AC0374 /* XCTestLog+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestLog+Specta.h"; path = "src/XCTestLog+Specta.h"; sourceTree = "<group>"; };
@@ -352,7 +353,6 @@
 		7FF0487F028B591DF4242345D6626947 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		808F6459AD912DD5612ACEE342476999 /* Pods-DMPasscode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DMPasscode-acknowledgements.markdown"; sourceTree = "<group>"; };
 		80D137D41E6E64DAA3A7E315737E28F3 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8280224299E48E08DEF753ACEC011A31 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 		852F8405B5B2248449C500106B142F1C /* DMPasscode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DMPasscode.m; sourceTree = "<group>"; };
 		857B4CD5DF8823C2B0A390FB8B6D4A35 /* Pods-Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Tests.modulemap"; sourceTree = "<group>"; };
 		8632BA458A788C8768B65E866C207A6E /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -529,7 +529,7 @@
 		09CE04E8F670FDAF0CC5DA286050D4C9 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				48EA55B5056134114BBF99A3305EB619 /* Assets */,
+				F9EC88618387822CE7998058C6F1C602 /* Assets */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -595,15 +595,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Expecta";
-			sourceTree = "<group>";
-		};
-		48EA55B5056134114BBF99A3305EB619 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				8280224299E48E08DEF753ACEC011A31 /* en.lproj */,
-				069BB6E556CDB342B9050EDDCB4A1283 /* vn.lproj */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		49C4E428E018ECBF393C246400AE50DA /* iOS */ = {
@@ -941,6 +932,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F9EC88618387822CE7998058C6F1C602 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				502E39F72507395DD5E3EF3BCE07D072 /* en.lproj */,
+				433E37505DBE071E7EBF56BAF91BAAD1 /* vi.lproj */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1088,7 +1088,7 @@
 			buildPhases = (
 				78A6226440487760B96B0CFA4F7F0FE8 /* Sources */,
 				3CB3246090BE6B79AC078AE3B8A860F1 /* Frameworks */,
-				DFA6FC1733FEAFC0AB09C3C73A11A74C /* Resources */,
+				C6715E414FA0E672A8DDA5B7D224162C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1244,20 +1244,20 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C6715E414FA0E672A8DDA5B7D224162C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96887131FF42EAF120CD0C71D0E635C /* en.lproj in Resources */,
+				D937B89273437116377B574F6B352FC2 /* vi.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD795F5BC5C48433484182EAE3B6A94F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6CB8B1ACA94397BA27D7E9D58A44603F /* DMPasscode.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DFA6FC1733FEAFC0AB09C3C73A11A74C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F49D3796EC0FFDBD8D0EFD33C9B42F36 /* en.lproj in Resources */,
-				6DC1DB0FF82205F32A660FCA6CB438D6 /* vn.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
