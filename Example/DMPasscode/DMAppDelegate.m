@@ -94,32 +94,53 @@
   //                                 {
   //                                   [self updateViews];
   //                                 }];
-  NSString *line1 = @"This code is needed to access the iDisplay settings";
-  NSString *line2 = @"<br />Note: Please choose a code that is not easy to "
-      @"guess (e.g. 1234).";
-  NSString *line3 = @"<br />This way you ensure that only authorized users can "
-      @"access the settings.";
-  NSParagraphStyle *paragraphStyle = [NSParagraphStyle defaultParagraphStyle];
+  /*
+NSString *line1 = @"This code is needed to access the iDisplay settings";
+NSString *line2 = @"<br />Note: Please choose a code that is not easy to "
+    @"guess (e.g. 1234).";
+NSString *line3 = @"<br />This way you ensure that only authorized users can "
+    @"access the settings.";
+NSParagraphStyle *paragraphStyle = [NSParagraphStyle defaultParagraphStyle];
 
-  NSDictionary *options = @{
-    NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType,
+NSDictionary *options = @{
+  NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType,
+  NSParagraphStyleAttributeName : paragraphStyle
+};
+
+//  NSMutableAttributedString *description =
+//      [[NSMutableAttributedString alloc] initWithString:test
+//                                             attributes:options];
+NSError *error;
+NSAttributedString *description = [[NSAttributedString alloc]
+          initWithData:[[[line1 stringByAppendingString:line2]
+                           stringByAppendingString:line3]
+                           dataUsingEncoding:NSUTF8StringEncoding]
+               options:options
+    documentAttributes:nil
+                 error:&error];
+*/
+  NSMutableParagraphStyle *paragraphStyle =
+      [[NSMutableParagraphStyle alloc] init];
+  [paragraphStyle setAlignment:NSTextAlignmentCenter];
+
+  NSDictionary *attributes = @{
+    NSFontAttributeName : [UIFont systemFontOfSize:18],
     NSParagraphStyleAttributeName : paragraphStyle
   };
 
-  //  NSMutableAttributedString *description =
-  //      [[NSMutableAttributedString alloc] initWithString:test
-  //                                             attributes:options];
-  NSError *error;
-  NSAttributedString *description = [[NSAttributedString alloc]
-            initWithData:[[[line1 stringByAppendingString:line2]
-                             stringByAppendingString:line3]
-                             dataUsingEncoding:NSUTF8StringEncoding]
-                 options:options
-      documentAttributes:nil
-                   error:&error];
+  NSString *line1 = @"This code is needed to access the iDisplay settings.";
+  NSString *line2 =
+      @"Note: Please choose a code that is not easy to guess (e.g. 1234)";
+  NSString *line3 = @"This way you ensure that only authorized users can "
+      @"access the settings.";
+  NSString *description =
+      [NSString stringWithFormat:@"%@\n%@\n%@", line1, line2, line3];
+  NSAttributedString *attributedString =
+      [[NSAttributedString alloc] initWithString:description
+                                      attributes:attributes];
 
   [DMPasscode setupPasscodeInViewController:_rootViewController
-                                description:description
+                                description:attributedString
                                  completion:^(BOOL success, NSError *error) {
                                    [self updateViews];
                                  }];

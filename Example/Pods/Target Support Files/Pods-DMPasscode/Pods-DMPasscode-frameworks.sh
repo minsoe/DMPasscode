@@ -84,16 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Tests/DMPasscode.framework"
-  install_framework "Pods-Tests/Expecta.framework"
-  install_framework "Pods-Tests/Expecta_Snapshots.framework"
-  install_framework "Pods-Tests/FBSnapshotTestCase.framework"
-  install_framework "Pods-Tests/Specta.framework"
+  install_framework "Pods-DMPasscode/DMPasscode.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Tests/DMPasscode.framework"
-  install_framework "Pods-Tests/Expecta.framework"
-  install_framework "Pods-Tests/Expecta_Snapshots.framework"
-  install_framework "Pods-Tests/FBSnapshotTestCase.framework"
-  install_framework "Pods-Tests/Specta.framework"
+  install_framework "Pods-DMPasscode/DMPasscode.framework"
 fi
