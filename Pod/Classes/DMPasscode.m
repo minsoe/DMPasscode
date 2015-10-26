@@ -17,11 +17,11 @@
 #import <LocalAuthentication/LocalAuthentication.h>
 #endif
 
-#undef NSLocalizedString
-#define NSLocalizedString(key, comment)                                        \
-  [bundle localizedStringForKey:(key)                                          \
-                          value:@""                                            \
-                          table:@"DMPasscodeLocalisatio" @"n"]
+//#undef NSLocalizedString
+//#define NSLocalizedString(key, comment)                                        \
+//  [bundle localizedStringForKey:(key)                                          \
+//                          value:@""                                            \
+//                          table:@"DMPasscodeLocalisation"]
 
 static DMPasscode *instance;
 static const NSString *KEYCHAIN_NAME = @"passcode";
